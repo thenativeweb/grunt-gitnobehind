@@ -3,9 +3,9 @@
 var shell = require('shelljs');
 
 module.exports = function (grunt) {
-  grunt.registerTask('gitnobehind', 'Ensures that your local branch is up-to-date.', function () {
-    var behind = shell.exec('git rev-list --right-only --count HEAD...origin/master', {
-      silent: !!grunt.option('verbose')
+  grunt.registerTask('gitnobehind', 'Ensures that the local master is not behind origin/master.', function () {
+    var behind = shell.exec('git fetch && git rev-list --right-only --count master...origin/master', {
+      silent: !grunt.option('verbose')
     });
 
     if (behind.code !== 0) {
@@ -13,7 +13,7 @@ module.exports = function (grunt) {
     }
 
     if (behind.output.trim() !== '0') {
-      grunt.fail.fatal('Your local branch is behind origin/master, run git pull first.');
+      grunt.fail.fatal('The local master is behind origin/master, run git pull first.');
     }
   });
 };

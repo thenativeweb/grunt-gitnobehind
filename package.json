@@ -1,7 +1,7 @@
 {
   "name": "grunt-gitnobehind",
   "version": "0.0.0",
-  "description": "grunt-gitnobehind ensures that your local branch is up-to-date.",
+  "description": "grunt-gitnobehind ensures that the local master is not behind origin/master",
   "contributors": [
     {
       "name": "Golo Roden",
