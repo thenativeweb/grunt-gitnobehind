@@ -19,9 +19,6 @@
     "grunt": "0.4.5",
     "tourism": "0.13.2"
   },
-  "peerDependencies": {
-    "grunt": "~0.4.5"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/thenativeweb/grunt-gitnobehind.git"
