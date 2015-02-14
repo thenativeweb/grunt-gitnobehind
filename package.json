@@ -1,6 +1,6 @@
 {
   "name": "grunt-gitnobehind",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "grunt-gitnobehind ensures that the local master is not behind origin/master",
   "contributors": [
     {
