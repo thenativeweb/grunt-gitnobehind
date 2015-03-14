@@ -23,5 +23,12 @@
     "type": "git",
     "url": "git://github.com/thenativeweb/grunt-gitnobehind.git"
   },
+  "keywords": [
+    "branch",
+    "git",
+    "github",
+    "grunt",
+    "master"
+  ],
   "license": "MIT"
 }
